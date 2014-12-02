@@ -63,16 +63,14 @@
 		6DC3087C1A2D6834009FCB11 /* ViewControllerLateCategoryInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerLateCategoryInterface.m; sourceTree = "<group>"; };
 		6DC3088B1A2D68C1009FCB11 /* InternalCategory-EarlyInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InternalCategory-EarlyInterface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC3088D1A2D6916009FCB11 /* ViewControllerEarlyCategoryInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEarlyCategoryInterface.m; sourceTree = "<group>"; };
-		6DC3089D1A2D696D009FCB11 /* ExternalCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExternalCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC3089D1A2D696D009FCB11 /* ExternalCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ExternalCategory.app; path = "ExternalCategory-Import.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC3089F1A2D69A6009FCB11 /* ViewController+LLDBSymbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+LLDBSymbols.h"; sourceTree = "<group>"; };
 		6DC308A01A2D69A6009FCB11 /* ViewController+LLDBSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+LLDBSymbols.m"; sourceTree = "<group>"; };
 		6DC308A21A2D6A04009FCB11 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6DC308A41A2D6A23009FCB11 /* ViewControllerCategoryImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCategoryImport.m; sourceTree = "<group>"; };
 		6DC308B61A2D6CC9009FCB11 /* ExternalCategory copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExternalCategory copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DC308B71A2D6CCA009FCB11 /* ExternalCategory copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ExternalCategory copy-Info.plist"; path = "/Users/mdd5/Bookhouse/Projects/GH-drance/radars/LLDBSymbols/ExternalCategory copy-Info.plist"; sourceTree = "<absolute>"; };
 		6DC308B91A2D7161009FCB11 /* ViewControllerEarlyCategoryImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEarlyCategoryImplementation.m; sourceTree = "<group>"; };
 		6DC308C81A2D7172009FCB11 /* InternalCategory-NoInterface copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InternalCategory-NoInterface copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DC308C91A2D7173009FCB11 /* InternalCategory-NoInterface copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "InternalCategory-NoInterface copy-Info.plist"; path = "/Users/mdd5/Bookhouse/Projects/GH-drance/radars/LLDBSymbols/InternalCategory-NoInterface copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +124,6 @@
 			children = (
 				6DC308461A2D6726009FCB11 /* LLDBSymbols */,
 				6DC308451A2D6726009FCB11 /* Products */,
-				6DC308B71A2D6CCA009FCB11 /* ExternalCategory copy-Info.plist */,
-				6DC308C91A2D7173009FCB11 /* InternalCategory-NoInterface copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -620,7 +616,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "ExternalCategory copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LLDBSymbols/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "ExternalCategory copy";
 			};
@@ -630,7 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "ExternalCategory copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LLDBSymbols/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "ExternalCategory copy";
 			};
@@ -640,7 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "InternalCategory-NoInterface copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LLDBSymbols/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "InternalCategory-NoInterface copy";
 			};
@@ -650,7 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "InternalCategory-NoInterface copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LLDBSymbols/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "InternalCategory-NoInterface copy";
 			};
@@ -675,6 +671,7 @@
 				6DC308691A2D6726009FCB11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DC308771A2D67F7009FCB11 /* Build configuration list for PBXNativeTarget "InternalCategory-LateInterface" */ = {
 			isa = XCConfigurationList;
